@@ -13,4 +13,7 @@ def verificador_de_cuatro_digito(x):
     
 x = int(input("ingrese el numero entero: "))
 
-verificador_de_cuatro_digito(x)
+#verificador_de_cuatro_digito(x)
+
+y = lambda x: (print("Su ultimo digito es cuatro" if x % 10 == 4 else "Es un entero normal")) 
+y(x)

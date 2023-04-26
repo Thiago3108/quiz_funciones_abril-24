@@ -5,6 +5,13 @@ def generador_de_tabla(valores, x):
     print(f"TABLA DEL {x}")
     for i in valores:
         print(f"{i} x {x} = {i*x}")
+
+
+
 x= int(input("ingrese el valor de la tabla de multiplicar: "))
 valores = range(1, 11)
-generador_de_tabla(valores, x)
+#generador_de_tabla(valores, x)
+
+y = lambda x, valores: (print(f"{i} x {x} = {i*x}") for i in valores  or print(f"TABLA DEL {x}") )
+y(x,valores)
+
